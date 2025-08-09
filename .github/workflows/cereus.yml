@@ -26,7 +26,7 @@ jobs:
         cd ak3
         zip -r9 CherryKernel-Ionized-cereus.zip * -x .git README.md *placeholder
         cp CherryKernel-Ionized-cereus.zip ../
-    - uses: actions/upload-artifact@v1
+    - uses: actions/upload-artifact@v4
       with:
         name: CherryKernel-Ionized-cereus-${{ github.sha }}
         path: CherryKernel-Ionized-cereus.zip
