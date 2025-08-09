@@ -1,6 +1,10 @@
 name: Build Cherry Kernel for cereus
 
-on: [push]
+on:
+  watch:
+    types: [started]
+
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
